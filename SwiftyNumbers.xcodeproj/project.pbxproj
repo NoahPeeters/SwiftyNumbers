@@ -7,21 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40D9003F1F62958600355457 /* SwiftyNumbersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D9003E1F62958600355457 /* SwiftyNumbersTest.swift */; };
 		40D900461F62962100355457 /* Addable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900451F62962100355457 /* Addable.swift */; };
 		40D900481F62976700355457 /* Subtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900471F62976700355457 /* Subtractable.swift */; };
 		40D9004A1F62979100355457 /* CStyleIncrement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900491F62979100355457 /* CStyleIncrement.swift */; };
-		40D9004C1F6298C600355457 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 40D9004B1F6298C600355457 /* README.md */; };
+		40D9004E1F629AB300355457 /* CStyleIncrementTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D9004D1F629AB300355457 /* CStyleIncrementTest.swift */; };
+		40D900501F629FFA00355457 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D9004F1F629FFA00355457 /* Round.swift */; };
+		40D900521F62A14D00355457 /* RoundTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900511F62A14D00355457 /* RoundTest.swift */; };
+		40D900541F62A26200355457 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900531F62A26200355457 /* Power.swift */; };
+		40D900561F62A31100355457 /* PowerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900551F62A31100355457 /* PowerTest.swift */; };
+		40D900591F62A39400355457 /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900581F62A39400355457 /* Vector2D.swift */; };
+		40D9005B1F62A4E400355457 /* Vector2DTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D9005A1F62A4E400355457 /* Vector2DTest.swift */; };
+		40D9005D1F62A59600355457 /* VectorDimensionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D9005C1F62A59600355457 /* VectorDimensionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40D9003C1F62958600355457 /* SwiftyNumbersTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyNumbersTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40D9003E1F62958600355457 /* SwiftyNumbersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNumbersTest.swift; sourceTree = "<group>"; };
 		40D900401F62958600355457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40D900451F62962100355457 /* Addable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addable.swift; sourceTree = "<group>"; };
 		40D900471F62976700355457 /* Subtractable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtractable.swift; sourceTree = "<group>"; };
 		40D900491F62979100355457 /* CStyleIncrement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStyleIncrement.swift; sourceTree = "<group>"; };
 		40D9004B1F6298C600355457 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		40D9004D1F629AB300355457 /* CStyleIncrementTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStyleIncrementTest.swift; sourceTree = "<group>"; };
+		40D9004F1F629FFA00355457 /* Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		40D900511F62A14D00355457 /* RoundTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTest.swift; sourceTree = "<group>"; };
+		40D900531F62A26200355457 /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		40D900551F62A31100355457 /* PowerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerTest.swift; sourceTree = "<group>"; };
+		40D900581F62A39400355457 /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
+		40D9005A1F62A4E400355457 /* Vector2DTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2DTest.swift; sourceTree = "<group>"; };
+		40D9005C1F62A59600355457 /* VectorDimensionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorDimensionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				40D900491F62979100355457 /* CStyleIncrement.swift */,
+				40D9004F1F629FFA00355457 /* Round.swift */,
+				40D900531F62A26200355457 /* Power.swift */,
+				40D900571F62A38500355457 /* Vector */,
 				40D900441F62961500355457 /* Protocols */,
 			);
 			path = SwiftyNumbers;
@@ -65,7 +81,10 @@
 		40D9003D1F62958600355457 /* SwiftyNumbersTest */ = {
 			isa = PBXGroup;
 			children = (
-				40D9003E1F62958600355457 /* SwiftyNumbersTest.swift */,
+				40D9004D1F629AB300355457 /* CStyleIncrementTest.swift */,
+				40D9005A1F62A4E400355457 /* Vector2DTest.swift */,
+				40D900511F62A14D00355457 /* RoundTest.swift */,
+				40D900551F62A31100355457 /* PowerTest.swift */,
 				40D900401F62958600355457 /* Info.plist */,
 			);
 			path = SwiftyNumbersTest;
@@ -76,8 +95,17 @@
 			children = (
 				40D900451F62962100355457 /* Addable.swift */,
 				40D900471F62976700355457 /* Subtractable.swift */,
+				40D9005C1F62A59600355457 /* VectorDimensionType.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		40D900571F62A38500355457 /* Vector */ = {
+			isa = PBXGroup;
+			children = (
+				40D900581F62A39400355457 /* Vector2D.swift */,
+			);
+			name = Vector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,11 +177,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40D9003F1F62958600355457 /* SwiftyNumbersTest.swift in Sources */,
 				40D9004A1F62979100355457 /* CStyleIncrement.swift in Sources */,
-				40D9004C1F6298C600355457 /* README.md in Sources */,
+				40D900591F62A39400355457 /* Vector2D.swift in Sources */,
 				40D900461F62962100355457 /* Addable.swift in Sources */,
+				40D900521F62A14D00355457 /* RoundTest.swift in Sources */,
+				40D9005D1F62A59600355457 /* VectorDimensionType.swift in Sources */,
 				40D900481F62976700355457 /* Subtractable.swift in Sources */,
+				40D900501F629FFA00355457 /* Round.swift in Sources */,
+				40D900541F62A26200355457 /* Power.swift in Sources */,
+				40D9004E1F629AB300355457 /* CStyleIncrementTest.swift in Sources */,
+				40D9005B1F62A4E400355457 /* Vector2DTest.swift in Sources */,
+				40D900561F62A31100355457 /* PowerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

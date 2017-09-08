@@ -8,16 +8,34 @@
 
 import Foundation
 
+//MARK: ++
+
 prefix operator ++
 postfix operator ++
 
-prefix func ++(value: inout Int) -> Int {
+public prefix func ++(value: inout Int) -> Int {
     value = value + 1
     return value
 }
 
-postfix func ++(value: inout Int) -> Int {
+public postfix func ++(value: inout Int) -> Int {
     let oldValue = value
     value = value + 1
+    return oldValue
+}
+
+//MARK: --
+
+prefix operator --
+postfix operator --
+
+public prefix func --(value: inout Int) -> Int {
+    value = value - 1
+    return value
+}
+
+public postfix func --(value: inout Int) -> Int {
+    let oldValue = value
+    value = value - 1
     return oldValue
 }

@@ -9,23 +9,25 @@
 import Foundation
 
 /// A protocol for all types which can be added to itself.
-protocol Addable {
+public protocol Addable {
     static func +(lhs: Self, rhs: Self) -> Self
     static func +=(lhs: inout Self, rhs: Self)
 }
 
-extension Int:  Addable {}
-extension Int8:  Addable {}
-extension Int16: Addable {}
-extension Int32: Addable {}
-extension Int64: Addable {}
+public protocol NumberAddable: Addable, ExpressibleByIntegerLiteral {}
 
-extension UInt:  Addable {}
-extension UInt8:  Addable {}
-extension UInt16: Addable {}
-extension UInt32: Addable {}
-extension UInt64: Addable {}
+extension Int:  NumberAddable {}
+extension Int8:  NumberAddable {}
+extension Int16: NumberAddable {}
+extension Int32: NumberAddable {}
+extension Int64: NumberAddable {}
 
-extension Float:  Addable {}
-extension Double:  Addable {}
-extension Float80:  Addable {}
+extension UInt:  NumberAddable {}
+extension UInt8:  NumberAddable {}
+extension UInt16: NumberAddable {}
+extension UInt32: NumberAddable {}
+extension UInt64: NumberAddable {}
+
+extension Float:  NumberAddable {}
+extension Double:  NumberAddable {}
+extension Float80:  NumberAddable {}
