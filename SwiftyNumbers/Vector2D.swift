@@ -89,3 +89,27 @@ extension Vector2D: Subtractable {
         lhs.y -= rhs.y
     }
 }
+
+extension Vector2D {
+    public static func *(vector: Vector2D, factor: DimensionType) -> Vector2D {
+        return Vector2D(vector.x * factor, vector.y * factor)
+    }
+    
+    public static func *(factor: DimensionType, vector: Vector2D) -> Vector2D {
+        return Vector2D(vector.x * factor, vector.y * factor)
+    }
+    
+    public static func *=(vector: inout Vector2D, factor: DimensionType) {
+        vector.x *= factor
+        vector.y *= factor
+    }
+    
+    public static func /(vector: Vector2D, factor: DimensionType) -> Vector2D {
+        return Vector2D(vector.x / factor, vector.y / factor)
+    }
+    
+    public static func /=(vector: inout Vector2D, factor: DimensionType) {
+        vector.x /= factor
+        vector.y /= factor
+    }
+}

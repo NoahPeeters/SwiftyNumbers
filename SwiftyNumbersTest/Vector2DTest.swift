@@ -46,6 +46,13 @@ class Vector2DTest: XCTestCase {
         XCTAssert(vector.tuppleRepresented == (5, 6))
     }
     
+    func testEquatable() {
+        let vector = Vector2D(x: 5, y: 6)
+        
+        XCTAssert(vector == vector)
+        XCTAssert(vector == [5, 6])
+    }
+    
     func testNegatable() {
         let vector1 = Vector2D(x: 5, y: -6)
         let vector2 = Vector2D(x: -5, y: 6)
@@ -53,7 +60,7 @@ class Vector2DTest: XCTestCase {
         XCTAssert(vector2 == -vector1)
     }
     
-    func testAdding() {
+    func testAddition() {
         var vector = Vector2D(x: 5, y: 6)
         XCTAssert(vector + [1, -4] == [6, 2])
         
@@ -61,11 +68,28 @@ class Vector2DTest: XCTestCase {
         XCTAssert(vector == [6, 2])
     }
     
-    func testSubtracting() {
+    func testSubtraction() {
         var vector = Vector2D(x: 5, y: 6)
         XCTAssert(vector - [1, -4] == [4, 10])
         
         vector -= [1, -4]
         XCTAssert(vector == [4, 10])
+    }
+    
+    func testMultipication() {
+        var vector = Vector2D(x: 5, y: 6)
+        XCTAssert(vector * 4 == [20, 24])
+        XCTAssert(4 * vector == [20, 24])
+        
+        vector *= 4
+        XCTAssert(vector == [20, 24])
+    }
+    
+    func testDivision() {
+        var vector = Vector2D(x: 8, y: 6)
+        XCTAssert(vector / 2 == [4, 3])
+        
+        vector /= 2
+        XCTAssert(vector == [4, 3])
     }
 }

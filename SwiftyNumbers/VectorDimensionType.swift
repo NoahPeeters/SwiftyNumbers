@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol VectorDimensionType: Addable, Subtractable, Negatable, CustomStringConvertible, Hashable, Equatable {}
+public protocol VectorDimensionType: Addable, Subtractable, Multiplicable, Divideable, Negatable, CustomStringConvertible, Hashable, Equatable {}
 
 extension Int:  VectorDimensionType {}
 extension Int8:  VectorDimensionType {}

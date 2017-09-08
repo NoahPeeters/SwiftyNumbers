@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public func round(_ value: Double, toDecimalPlaces decimalPlaces: Int) -> Double {
     let factor = pow(10, decimalPlaces)
     
