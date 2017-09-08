@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol VectorDimensionType: Addable, Subtractable {}
+public protocol VectorDimensionType: Addable, Subtractable, Negatable, CustomStringConvertible, Hashable, Equatable {}
 
 extension Int:  VectorDimensionType {}
 extension Int8:  VectorDimensionType {}
@@ -16,12 +16,8 @@ extension Int16: VectorDimensionType {}
 extension Int32: VectorDimensionType {}
 extension Int64: VectorDimensionType {}
 
-extension UInt:  VectorDimensionType {}
-extension UInt8:  VectorDimensionType {}
-extension UInt16: VectorDimensionType {}
-extension UInt32: VectorDimensionType {}
-extension UInt64: VectorDimensionType {}
-
 extension Float:  VectorDimensionType {}
 extension Double:  VectorDimensionType {}
 extension Float80:  VectorDimensionType {}
+
+extension CGFloat: VectorDimensionType {}
