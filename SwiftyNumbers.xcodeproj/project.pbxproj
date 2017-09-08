@@ -11,6 +11,7 @@
 		40D900461F62962100355457 /* Addable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900451F62962100355457 /* Addable.swift */; };
 		40D900481F62976700355457 /* Subtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900471F62976700355457 /* Subtractable.swift */; };
 		40D9004A1F62979100355457 /* CStyleIncrement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900491F62979100355457 /* CStyleIncrement.swift */; };
+		40D9004C1F6298C600355457 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 40D9004B1F6298C600355457 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		40D900451F62962100355457 /* Addable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addable.swift; sourceTree = "<group>"; };
 		40D900471F62976700355457 /* Subtractable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtractable.swift; sourceTree = "<group>"; };
 		40D900491F62979100355457 /* CStyleIncrement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStyleIncrement.swift; sourceTree = "<group>"; };
+		40D9004B1F6298C600355457 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		40D900251F62956300355457 = {
 			isa = PBXGroup;
 			children = (
+				40D9004B1F6298C600355457 /* README.md */,
 				40D900301F62956300355457 /* SwiftyNumbers */,
 				40D9003D1F62958600355457 /* SwiftyNumbersTest */,
 				40D9002F1F62956300355457 /* Products */,
@@ -148,6 +151,7 @@
 			files = (
 				40D9003F1F62958600355457 /* SwiftyNumbersTest.swift in Sources */,
 				40D9004A1F62979100355457 /* CStyleIncrement.swift in Sources */,
+				40D9004C1F6298C600355457 /* README.md in Sources */,
 				40D900461F62962100355457 /* Addable.swift in Sources */,
 				40D900481F62976700355457 /* Subtractable.swift in Sources */,
 			);
