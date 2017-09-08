@@ -4,15 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftyNumbers.xcscheme</key>
+		<key>SwiftyNumbersTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>40D9002D1F62956300355457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40D9003B1F62958600355457</key>
 		<dict>
 			<key>primary</key>
 			<true/>

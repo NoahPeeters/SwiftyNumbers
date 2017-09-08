@@ -7,28 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40D900321F62956300355457 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900311F62956300355457 /* main.swift */; };
+		40D9003F1F62958600355457 /* SwiftyNumbersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D9003E1F62958600355457 /* SwiftyNumbersTest.swift */; };
+		40D900461F62962100355457 /* Addable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900451F62962100355457 /* Addable.swift */; };
+		40D900481F62976700355457 /* Subtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900471F62976700355457 /* Subtractable.swift */; };
+		40D9004A1F62979100355457 /* CStyleIncrement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D900491F62979100355457 /* CStyleIncrement.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		40D9002C1F62956300355457 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		40D9002E1F62956300355457 /* SwiftyNumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftyNumbers; sourceTree = BUILT_PRODUCTS_DIR; };
-		40D900311F62956300355457 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		40D9003C1F62958600355457 /* SwiftyNumbersTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyNumbersTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D9003E1F62958600355457 /* SwiftyNumbersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNumbersTest.swift; sourceTree = "<group>"; };
+		40D900401F62958600355457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D900451F62962100355457 /* Addable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addable.swift; sourceTree = "<group>"; };
+		40D900471F62976700355457 /* Subtractable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtractable.swift; sourceTree = "<group>"; };
+		40D900491F62979100355457 /* CStyleIncrement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStyleIncrement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		40D9002B1F62956300355457 /* Frameworks */ = {
+		40D900391F62958600355457 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +37,7 @@
 			isa = PBXGroup;
 			children = (
 				40D900301F62956300355457 /* SwiftyNumbers */,
+				40D9003D1F62958600355457 /* SwiftyNumbersTest */,
 				40D9002F1F62956300355457 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,7 +45,7 @@
 		40D9002F1F62956300355457 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40D9002E1F62956300355457 /* SwiftyNumbers */,
+				40D9003C1F62958600355457 /* SwiftyNumbersTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,30 +53,49 @@
 		40D900301F62956300355457 /* SwiftyNumbers */ = {
 			isa = PBXGroup;
 			children = (
-				40D900311F62956300355457 /* main.swift */,
+				40D900491F62979100355457 /* CStyleIncrement.swift */,
+				40D900441F62961500355457 /* Protocols */,
 			);
 			path = SwiftyNumbers;
+			sourceTree = "<group>";
+		};
+		40D9003D1F62958600355457 /* SwiftyNumbersTest */ = {
+			isa = PBXGroup;
+			children = (
+				40D9003E1F62958600355457 /* SwiftyNumbersTest.swift */,
+				40D900401F62958600355457 /* Info.plist */,
+			);
+			path = SwiftyNumbersTest;
+			sourceTree = "<group>";
+		};
+		40D900441F62961500355457 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				40D900451F62962100355457 /* Addable.swift */,
+				40D900471F62976700355457 /* Subtractable.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		40D9002D1F62956300355457 /* SwiftyNumbers */ = {
+		40D9003B1F62958600355457 /* SwiftyNumbersTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40D900351F62956300355457 /* Build configuration list for PBXNativeTarget "SwiftyNumbers" */;
+			buildConfigurationList = 40D900411F62958600355457 /* Build configuration list for PBXNativeTarget "SwiftyNumbersTest" */;
 			buildPhases = (
-				40D9002A1F62956300355457 /* Sources */,
-				40D9002B1F62956300355457 /* Frameworks */,
-				40D9002C1F62956300355457 /* CopyFiles */,
+				40D900381F62958600355457 /* Sources */,
+				40D900391F62958600355457 /* Frameworks */,
+				40D9003A1F62958600355457 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftyNumbers;
-			productName = SwiftyNumbers;
-			productReference = 40D9002E1F62956300355457 /* SwiftyNumbers */;
-			productType = "com.apple.product-type.tool";
+			name = SwiftyNumbersTest;
+			productName = SwiftyNumbersTest;
+			productReference = 40D9003C1F62958600355457 /* SwiftyNumbersTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,7 +107,7 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Noah Peeters";
 				TargetAttributes = {
-					40D9002D1F62956300355457 = {
+					40D9003B1F62958600355457 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 52A793VRAY;
 						ProvisioningStyle = Automatic;
@@ -111,17 +126,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40D9002D1F62956300355457 /* SwiftyNumbers */,
+				40D9003B1F62958600355457 /* SwiftyNumbersTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		40D9003A1F62958600355457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		40D9002A1F62956300355457 /* Sources */ = {
+		40D900381F62958600355457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40D900321F62956300355457 /* main.swift in Sources */,
+				40D9003F1F62958600355457 /* SwiftyNumbersTest.swift in Sources */,
+				40D9004A1F62979100355457 /* CStyleIncrement.swift in Sources */,
+				40D900461F62962100355457 /* Addable.swift in Sources */,
+				40D900481F62976700355457 /* Subtractable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,20 +246,30 @@
 			};
 			name = Release;
 		};
-		40D900361F62956300355457 /* Debug */ = {
+		40D900421F62958600355457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 52A793VRAY;
+				INFOPLIST_FILE = SwiftyNumbersTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = to.us.peeters.SwiftyNumbersTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		40D900371F62956300355457 /* Release */ = {
+		40D900431F62958600355457 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 52A793VRAY;
+				INFOPLIST_FILE = SwiftyNumbersTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = to.us.peeters.SwiftyNumbersTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -248,11 +286,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40D900351F62956300355457 /* Build configuration list for PBXNativeTarget "SwiftyNumbers" */ = {
+		40D900411F62958600355457 /* Build configuration list for PBXNativeTarget "SwiftyNumbersTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				40D900361F62956300355457 /* Debug */,
-				40D900371F62956300355457 /* Release */,
+				40D900421F62958600355457 /* Debug */,
+				40D900431F62958600355457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
